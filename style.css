@@ -1,0 +1,133 @@
+  @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+.card {
+    display: grid;
+    background-color: white ;
+    width: 40%;
+    height: 70%;
+    margin: auto;
+    margin-top: 25vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px ;
+}
+.noti {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px;
+}
+.noti h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.noti span {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.noti p {
+    color: hsl(218, 22%, 67%);
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: hsl(179, 62%, 43%);
+    padding-left: 10%;
+    color: white;
+    border-radius: 0 0 0 10px ;
+}
+.price div {
+    display: flex;
+    gap: 8%;
+    color: hsl(218, 22%, 67%);
+    margin: 8% 0 4% 0;
+    align-items: center;
+}
+.price-num {
+    font-size: 180%;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.price button {
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    width: 80%;
+    height: 20%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 8px;
+}
+.price button:hover {
+    box-shadow: 5px 5px 10px gray;
+}
+.info {
+    background-color: hsl(179, 62%, 43%, .8);
+    color: white;
+    padding-left: 10%;
+    padding-top: 5%;
+    border-radius: 0 0 10px 0;
+}
+.info ul {
+    text-decoration: none;
+    list-style: none;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info a {
+    color: inherit;
+    font-size: 10px;
+    
+}
+
+@media (min-width: 375px) and (max-width: 1000px)  {
+    .card {
+        width: 80%;
+        height: 70%;
+        margin-top: 8vh;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .noti {
+        grid-column: 1;
+        margin: 20px;
+        font-size: 13px;
+    }
+    .price {
+        padding-top: 3%;
+        border-radius: 0px
+    }
+    .price div {
+        margin: 4% 0 4% 0;
+    }
+    .price button {
+        margin-bottom: 5%;
+    }
+    .info {
+        border-radius: 0 0 10px 10px;
+    }
+    .info ul {
+        margin-top: 1%;
+    }
+
+}
